@@ -7,12 +7,20 @@ const Title = () => <h1>Hello Title Component</h1>
 
 const Content = () => {
     return (
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iure
-            cumque consectetur tenetur omnis laudantium quos sint sunt neque
-            earum aut iusto rerum, officia distinctio saepe reiciendis, commodi
-            delectus voluptas.
-        </p>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                iure cumque consectetur tenetur omnis laudantium quos sint sunt
+                neque earum aut iusto rerum, officia distinctio saepe
+                reiciendis, commodi delectus voluptas.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                iure cumque consectetur tenetur omnis laudantium quos sint sunt
+                neque earum aut iusto rerum, officia distinctio saepe
+                reiciendis, commodi delectus voluptas.
+            </p>
+        </div>
     )
 }
 
