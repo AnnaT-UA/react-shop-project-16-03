@@ -1,13 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-///function declaration
+///Arrow function
 
-function Title() {
-    return <h1>Hello Title Component</h1>
-}
+const Title = () => <h1>Hello Title Component</h1>
 
-function Content() {
+const Content = () => {
     return (
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iure
