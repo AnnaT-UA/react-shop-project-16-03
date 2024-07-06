@@ -7,12 +7,13 @@ type HeaderProps = {
     text: string
     leftPart: string
     rightPart: string
+    order?: number
 }
 
 const Header = (props: HeaderProps) => {
     return (
         <h1>
-            {props.leftPart} {props.text} {props.rightPart}
+            {props.order} {props.leftPart} {props.text} {props.rightPart}
         </h1>
     )
 }
@@ -38,6 +39,7 @@ const Content = () => {
 const App = () => {
     return (
         <>
+            <Header order={3} text="Title" leftPart="Hello" rightPart="Test" />
             <Header text="Title" leftPart="Hello" rightPart="Test" />
             <Header text="App" leftPart="Hi" rightPart="Bla-bla" />
             <Header text="React" leftPart="Bye-bye" rightPart="Rainbow" />
