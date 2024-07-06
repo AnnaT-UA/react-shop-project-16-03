@@ -10,6 +10,11 @@ type HeaderProps = {
     order?: number
 }
 
+type ContentType = {
+    title: string
+    text1: string
+    text2: string
+}
 const Header = (props: HeaderProps) => {
     return (
         <h1>
@@ -17,22 +22,13 @@ const Header = (props: HeaderProps) => {
         </h1>
     )
 }
-const Content = () => {
+const Content = (props: ContentType) => {
     return (
-        <React.Fragment>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                iure cumque consectetur tenetur omnis laudantium quos sint sunt
-                neque earum aut iusto rerum, officia distinctio saepe
-                reiciendis, commodi delectus voluptas.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                iure cumque consectetur tenetur omnis laudantium quos sint sunt
-                neque earum aut iusto rerum, officia distinctio saepe
-                reiciendis, commodi delectus voluptas.
-            </p>
-        </React.Fragment>
+        <>
+            <h2>{props.title}</h2>
+            <p>{props.text1}</p>
+            <p>{props.text1}</p>
+        </>
     )
 }
 
@@ -40,11 +36,14 @@ const App = () => {
     return (
         <>
             <Header order={3} text="Title" leftPart="Hello" rightPart="Test" />
-            <Header text="Title" leftPart="Hello" rightPart="Test" />
-            <Header text="App" leftPart="Hi" rightPart="Bla-bla" />
+            <Header text="App" leftPart="Hi" rightPart="Bla-Bla" />
             <Header text="React" leftPart="Bye-bye" rightPart="Rainbow" />
-
-            <Content />
+            <Content title="Content 1" text1="hello 1" text2="Hello 2" />
+            <Content
+                title="Content 2"
+                text1="hello 1"
+                text2="Hello 2 lorem blalb alblablbl"
+            />
         </>
     )
 }
