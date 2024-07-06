@@ -24,10 +24,18 @@ const Content = () => {
     )
 }
 
+const App = () => {
+    return (
+        <div>
+            <Title />
+            <Content />
+        </div>
+    )
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
     <React.StrictMode>
-        <Title />
-        <Content />
+        <App />
     </React.StrictMode>
 )
