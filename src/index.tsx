@@ -15,6 +15,16 @@ type ContentType = {
     text1: string
     text2: string
 }
+
+const user = {
+    name: 'Jack',
+    age: 10,
+}
+
+const { name, age } = user
+
+console.log(name, age)
+
 const Header = (props: HeaderProps) => {
     return (
         <h1>
