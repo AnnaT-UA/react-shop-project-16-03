@@ -12,12 +12,14 @@ const App = () => {
                 leftPart="Hello"
                 rightPart="Test"
                 background="aqua"
+                color="green"
             />
             <Header
                 text="App"
                 leftPart="Hi"
                 rightPart="Bla-Bla"
                 background="green"
+                color="yellow"
             />
             <Header text="React" leftPart="Bye-bye" rightPart="Rainbow" />
             <Content title="Content 1" text1="hello 1" text2="Hello 2" />
