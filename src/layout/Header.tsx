@@ -3,6 +3,7 @@ import Toolbar from '@mui/material/Toolbar'
 import { Container } from '@mui/material'
 import Logo from '../components/Logo/Logo'
 import Button from '../components/Menu/Menu'
+import Menu from '../components/Menu/Menu'
 
 type Props = {}
 
@@ -17,7 +18,7 @@ const Header = (props: Props) => {
             <Container>
                 <Toolbar>
                     <Logo />
-                    <Button />
+                    <Menu />
                 </Toolbar>
             </Container>
         </AppBar>
