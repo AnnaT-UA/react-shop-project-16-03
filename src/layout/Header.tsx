@@ -1,9 +1,8 @@
 import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
-import { Container } from '@mui/material'
 import Logo from '../components/Logo/Logo'
-import Button from '../components/Menu/Menu'
 import Menu from '../components/Menu/Menu'
+import { Container } from '@mui/material'
 
 type Props = {}
 
