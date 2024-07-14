@@ -6,7 +6,7 @@ import logo from '../../assets/logo.svg'
 type Props = {}
 const Logo = (props: Props) => {
     return (
-        <div>
+        <>
             <IconButton
                 size="large"
                 edge="start"
@@ -19,7 +19,7 @@ const Logo = (props: Props) => {
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                 <img src={logo} alt="" />
             </Typography>
-        </div>
+        </>
     )
 }
 export default Logo
