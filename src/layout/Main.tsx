@@ -5,7 +5,7 @@ type Props = {}
 const Main = (props: Props) => {
     return (
         <>
-            <Container>
+            <Container className="main-container">
                 <ProductsList />
             </Container>
         </>
