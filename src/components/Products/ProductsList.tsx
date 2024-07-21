@@ -17,7 +17,12 @@ const ProductsList = (props: Props) => {
             </Typography>
             <Grid container spacing={2}>
                 <Grid item xs={12} sm={6} lg={4}>
-                    <ProductListItem title="iPhone 15" />
+                    <ProductListItem
+                        title="iPhone 15"
+                        description="This is iPhone 15"
+                        capacity="64Gb"
+                        price="800"
+                    />
                 </Grid>
                 <Grid item xs={12} sm={6} lg={4}>
                     <ProductListItem title="iPhone 14" />
