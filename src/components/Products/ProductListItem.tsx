@@ -1,4 +1,5 @@
 import { Button, Card, CardContent } from '@mui/material'
+import './ProductListItem.css'
 
 type Props = {
     title: string
